@@ -7,7 +7,7 @@ namespace AR.Domain
     {
         [Key]
         public Guid ID { get; set; }
-        [Required(ErrorMessage = "O campo {0} nome é obrigatório")]
+        [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [MaxLength(70, ErrorMessage = "O campo {0} deve ter no máximo {1} caracteres")]
         public string Name { get; set; }
         public string CPF { get; set; }
