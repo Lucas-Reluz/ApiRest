@@ -1,8 +1,11 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AR.Domain
 {
+    #region Tabela de Clientes
+    [Table ("tb_clientes")]
     public class Cliente
     {
         [Key]
@@ -14,3 +17,4 @@ namespace AR.Domain
         public int Idade { get; set; }
     }
 }
+#endregion
